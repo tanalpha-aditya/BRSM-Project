@@ -3,15 +3,15 @@
   2021114009 – Aditya Raghuvanshi
   2021101057 - Pranit Khanna
   2021114012 – Yash Bhaskar
-  
+
 ### Topic Selection & Datasets
 #### World Happiness Report: (2012 – 2023)
 
 The World Happiness Report provides a rich dataset on various factors related to happiness and well-being across countries. While the report analyzes key variables, there is an opportunity for further investigation into the relationships between happiness and other potential factors not directly included in the report. The aims of this study are to thoroughly analyze the report data, evaluate the robustness of the methodology, perform comparative analysis across years, and explore additional variables that may correlate with happiness index scores.
 
 Going beyond this dataset, we explore two further datasets-
-♦	Alcohol use (https://www.kaggle.com/datasets/marcospessotto/happiness-and-alcohol-consumption )
-♦	Population (https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)
+  ♦	Alcohol use (https://www.kaggle.com/datasets/marcospessotto/happiness-and-alcohol-consumption )
+  ♦	Population (https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)
 
 ### Aim of the study
 We want answers to questions such as the following, the methodologies of which are covered in a later section-
@@ -73,4 +73,3 @@ The overall expected outcome of this project is to derive comprehensive, data-dr
 •	Forecast future year happiness scores and rankings using ARIMA modeling.
 Achieving these outcomes will provide a multidimensional, rigorous understanding into predictors of happiness at a national level. It will help distinguish the most relevant determinants of well-being and evaluate the data reliability. Predictive modeling can further validate the robustness.
 The insights can inform government policies aimed at improving societal happiness through interventions on influential factors. Trend analysis will reveal effects of economic and social events. In sum, this study aims to explain, compare, predict, and ultimately provide recommendations for raising national happiness levels globally.
-![image](https://github.com/tanalpha-aditya/BRSM-Project/assets/95013905/6c2f3c5c-e92f-4046-8b38-7e4f3afd21f4)
