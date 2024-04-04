@@ -1,0 +1,110 @@
+-> Terminology for Normality check
+
+    - Skewness measures the asymmetry of a distribution, with a value of 0 indicating perfect symmetry. Positive skewness indicates a longer right tail, while negative skewness indicates a longer left tail.
+    - Kurtosis measures the "peakedness" of a distribution. A normal distribution has a kurtosis of 3. Higher kurtosis indicates a more peaked distribution with heavier tails, while lower kurtosis indicates a flatter distribution.
+    - The Shapiro-Wilk test is a statistical test that checks if a sample comes from a normal distribution. A low p-value (e.g., < 0.05) suggests that the data is not normally distributed.
+
+-> Interpretation for normality check 
+
+1. Ladder score:
+    - Skewness is -0.46, indicating a slight negative skew.
+    - Kurtosis is 0.02, close to zero, suggesting a relatively normal distribution.
+    - Shapiro-Wilk test has a p-value of 0.0654, which is above the typical significance level of 0.05. This suggests that the data is approximately normally distributed.
+
+2. Standard error of ladder score:
+    - Skewness is 1.19, indicating a positive skew.
+    - Kurtosis is 1.66, suggesting a heavy-tailed distribution.
+    - Shapiro-Wilk test has a p-value of 0.0000, indicating a significant deviation from normality.
+
+3. upperwhisker and lowerwhisker:
+    - Both have slight negative skewness (-0.51 and -0.42, respectively).
+    - Kurtosis values are close to zero (0.17 and -0.11), suggesting relatively normal distributions.
+    - Shapiro-Wilk tests have p-values of 0.0437 and 0.0898, indicating some deviation from normality, but not as significant as other variables.
+
+4. Logged GDP per capita, Social support, Healthy life expectancy, Freedom to make life choices:
+    - All have negative skewness, ranging from -0.40 to -0.96.
+    - Kurtosis values range from -0.79 to 1.01, suggesting some departure from normality.
+    - Shapiro-Wilk tests have p-values less than 0.05, indicating significant deviations from normality.
+
+5. Generosity:
+    - Skewness is 0.65, indicating a positive skew.
+    - Kurtosis is 0.85, suggesting a slightly heavy-tailed distribution.
+    - Shapiro-Wilk test has a p-value of 0.0067, indicating a significant deviation from normality.
+
+6. Perceptions of corruption:
+    - Skewness is -1.47, indicating a negative skew.
+    - Kurtosis is 1.64, suggesting a heavy-tailed distribution.
+    - Shapiro-Wilk test has a p-value of 0.0000, indicating a significant deviation from normality.
+
+7. Ladder score in Dystopia:
+    - Skewness and kurtosis are reported as nan, indicating that the values are constant or have no variation.
+    - Shapiro-Wilk test has a p-value of 1.0000, confirming that the data does not vary.
+
+8. Explained by variables (Log GDP per capita, Social support, Healthy life expectancy, Freedom to make life choices, Generosity, Perceptions of corruption):
+    - Skewness and kurtosis values indicate departures from normality, with a mix of negative and positive skewness and varying levels of kurtosis.
+    - Shapiro-Wilk tests have p-values less than 0.05, indicating significant deviations from normality.
+
+9. Dystopia + residual:
+    - Skewness is -0.76, indicating a negative skew.
+    - Kurtosis is 1.35, suggesting a heavy-tailed distribution.
+
+Shapiro-Wilk test has a p-value of 0.0006, indicating a significant deviation from normality.
+Overall, most variables show some level of deviation from normality based on the skewness, kurtosis, and Shapiro-Wilk test results. The Ladder score appears to be the closest to a normal distribution, while the other variables exhibit varying levels of skewness and kurtosis, indicating non-normal distributions.
+
+
+
+-> Terminology for Internal consistency
+
+Cronbach's alpha assesses the extent to which a group of items are related to each other and measure the same underlying construct. 
+
+Key points about Cronbach's alpha:
+Range: Cronbach's alpha ranges from 0 to 1. Higher values indicate greater internal consistency.
+Interpretation: Generally, a Cronbach's alpha of 0.70 or higher is considered acceptable, indicating good internal consistency. However, in some cases, a lower threshold of 0.60 may be considered sufficient, especially for exploratory research or scales with a small number of items.
+Assumptions: Cronbach's alpha assumes that the items are measuring the same underlying construct and that the items are correlated with each other.
+
+
+
+-> Interpretation for Internal consistency
+
+A Cronbach's alpha value of 0.6434 suggests a moderate level of internal consistency reliability for the dataset.
+
+Cronbach's alpha ranges from 0 to 1, with higher values indicating greater internal consistency.
+While a value of 0.70 or above is generally considered acceptable, a Cronbach's alpha of 0.6434 falls slightly below this threshold.
+This value indicates that the variables in the dataset have a moderate level of internal consistency and are measuring the same underlying construct to some extent, but there may be room for improvement.
+
+
+-> Correlation
+
+1. Strong positive correlations:
+   - "upperwhisker" and "lowerwhisker" have a very strong positive correlation (0.997714), indicating that they are highly related and move in the same direction.
+   - "Logged GDP per capita" has strong positive correlations with "Healthy life expectancy" (0.837533) and "Social support" (0.741762), suggesting that countries with higher GDP per capita tend to have higher healthy life expectancy and social support.
+   - "Explained by: Log GDP per capita", "Explained by: Social support", and "Explained by: Healthy life expectancy" have strong positive correlations with their respective original variables, indicating that these factors significantly contribute to the overall happiness scores.
+
+2. Moderate positive correlations:
+   - "Freedom to make life choices" has moderate positive correlations with "Social support" (0.546319) and "Logged GDP per capita" (0.449462), suggesting that countries with higher social support and GDP per capita tend to have greater freedom to make life choices.
+   - "Dystopia + residual" has moderate positive correlations with "upperwhisker" (0.503968) and "lowerwhisker" (0.484722), indicating that the residual factor (unexplained happiness) is positively associated with the upper and lower bounds of the happiness scores.
+
+3. Weak or negligible correlations:
+   - "Generosity" has weak or negligible correlations with most other variables, suggesting that it may not have a strong direct relationship with the other factors.
+   - "Perceptions of corruption" has weak to moderate negative correlations with several variables, indicating that higher perceived corruption is associated with lower values of those variables.
+
+4. Missing correlations:
+   - The correlation matrix has missing values (NaN) for "Ladder score in Dystopia" as its contant.
+
+
+-> Terminology for Outlier detection
+
+1. Z-score method:
+    - The Z-score method, also known as the standard score method, is a statistical technique used to identify outliers in a dataset. It measures how many standard deviations an observation is from the mean of the dataset. The Z-score is calculated using the formula: Z = (x - μ) / σ, where x is the observation value, μ is the mean of the dataset, and σ is the standard deviation.
+
+2. Tukey's method:
+    - Tukey's method, also known as the interquartile range (IQR) method, is another technique for identifying outliers. It relies on the concept of quartiles, which divide the dataset into four equal parts. The first quartile (Q1) is the 25th percentile, the second quartile (Q2) is the median, and the third quartile (Q3) is the 75th percentile. The IQR is the range between Q1 and Q3.
+
+
+-> Interpretation for Outlier detection
+
+The difference in the number of outliers detected by the two methods (8 vs. 24) suggests that Tukey's method is identifying more observations as outliers compared to the Z-score method. This could be due to the presence of extreme values that are affecting the mean and standard deviation used in the Z-score calculation, making it less sensitive to outliers.
+
+Tukey's method is often preferred when dealing with skewed or asymmetric distributions, while the Z-score method assumes a roughly normal distribution.
+
+Here, Tukey's method has identified a larger number of outliers, indicating that there might be more observations that deviate significantly from the central tendency of the dataset.
